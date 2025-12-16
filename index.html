@@ -8,8 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Great+Vibes&family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" xintegrity="sha512-SnH5WK+bZxgPHs44uWIX+LLMDJ8yI0IzQ0wB+W5l08S/843sR99/fT2b112V8/jC+xRzO5v5j8m93x5qA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Font Awesome for Icons (Removed as requested) -->
     <style>
         :root {
             --primary-color: #667eea;
@@ -207,10 +206,7 @@
             position: relative;
             animation: slideRight 0.8s ease-out;
         }
-
-        .section-title i {
-            color: #4facfe; /* Icon color for titles */
-        }
+        /* Removed .section-title i selector */
 
         .section-title::after {
             content: '';
@@ -280,11 +276,6 @@
             color: #b0b0b0;
         }
         
-        .education-item i {
-            color: #4facfe;
-            margin-right: 10px;
-        }
-        
         /* --- LinkedIn Link --- */
         .linkedin-link {
             display: inline-flex; /* Use flex for icon alignment */
@@ -347,17 +338,12 @@
 
         .property-detail {
             display: flex;
-            align-items: flex-start; /* Align icon/strong to the top */
+            align-items: flex-start; /* Align label to the top */
             margin-bottom: 15px;
             color: #b0b0b0;
             transition: all 0.3s ease;
         }
         
-        .property-detail i {
-            color: #4facfe;
-            margin-top: 4px; /* Align icon better */
-        }
-
         .property-card:hover .property-detail {
             transform: translateX(5px);
         }
@@ -396,12 +382,6 @@
             box-shadow: 0 5px 15px rgba(102, 126, 234, 0.5);
             position: relative;
             overflow: hidden;
-        }
-
-        .view-map-btn i {
-            margin-right: 8px;
-            color: white;
-            transition: transform 0.4s;
         }
 
         .view-map-btn:hover {
@@ -446,11 +426,6 @@
             align-items: center;
         }
         
-        .investment-name i {
-            margin-right: 10px;
-            color: #ffc107;
-        }
-
         .investment-value {
             font-size: 1.5em;
             color: var(--primary-color);
@@ -510,22 +485,22 @@
 
         <!-- PERSONAL INFORMATION -->
         <div class="section">
-            <h2 class="section-title"><i class="fas fa-user-circle"></i>Personal Information</h2>
+            <h2 class="section-title">Personal Information</h2>
             <div class="education-grid">
                 <div class="education-item">
-                    <strong><i class="fas fa-id-card-alt"></i>Full Name</strong>
+                    <strong>Full Name</strong>
                     <span>Ravi Kumar Ballapuram</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-birthday-cake"></i>Date of Birth</strong>
+                    <strong>Date of Birth</strong>
                     <span>30 May 1998 | 3:20 PM</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-star"></i>Zodiac Sign</strong>
+                    <strong>Zodiac Sign</strong>
                     <span>Libra</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-ruler-vertical"></i>Height</strong>
+                    <strong>Height</strong>
                     <span>5 feet 10 inches (179 cm)</span>
                 </div>
             </div>
@@ -533,18 +508,18 @@
 
         <!-- PROFESSIONAL DETAILS -->
         <div class="section">
-            <h2 class="section-title"><i class="fas fa-briefcase"></i>Professional Details</h2>
+            <h2 class="section-title">Professional Details</h2>
             <div class="education-grid">
                 <div class="education-item">
-                    <strong><i class="fas fa-code-branch"></i>Current Position</strong>
+                    <strong>Current Position</strong>
                     <span>AI Engineer</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-building"></i>Company</strong>
+                    <strong>Company</strong>
                     <span>MTS Global Industrial Technologies, Taiwan</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-sack-dollar"></i>Annual Package</strong>
+                    <strong>Annual Package</strong>
                     <span>₹30 Lakhs Per Annum (After Tax)</span>
                 </div>
             </div>
@@ -552,40 +527,40 @@
 
         <!-- EDUCATIONAL BACKGROUND -->
         <div class="section">
-            <h2 class="section-title"><i class="fas fa-graduation-cap"></i>Educational Background</h2>
+            <h2 class="section-title">Educational Background</h2>
             <div class="education-grid">
                 <div class="education-item">
-                    <strong><i class="fas fa-user-graduate"></i>Master's Degree in Data Science</strong>
+                    <strong>Master's Degree in Data Science</strong>
                     <span>Specialization: AI & Automation Engineering | Asia University, Taiwan (Wufeng)</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-book"></i>Bachelor's Degree</strong>
+                    <strong>Bachelor's Degree</strong>
                     <span>Specialization: Electonics & Communcation Engineering | MITS College, India</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-certificate"></i>Diploma</strong>
+                    <strong>Diploma</strong>
                     <span>Specialization:Electonics & Communcation Engineering | Loyola College, Pulivendula, India</span>
                 </div>
             </div>
             <a href="https://www.linkedin.com/in/ravi333458/" target="_blank" class="linkedin-link">
-                <i class="fab fa-linkedin-in"></i> View Professional Experience on LinkedIn
+                View Professional Experience on LinkedIn
             </a>
         </div>
 
         <!-- FAMILY DETAILS -->
         <div class="section">
-            <h2 class="section-title"><i class="fas fa-home"></i>Family Details</h2>
+            <h2 class="section-title">Family Details</h2>
             <div class="education-grid">
                 <div class="education-item">
-                    <strong><i class="fas fa-male"></i>Father</strong>
-                    <span>Chandra.B (Real Estate Business)</span>
+                    <strong>Father</strong>
+                    <span>Chandra (Real Estate Business)</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-female"></i>Mother</strong>
-                    <span>Sudha Rani.B (Homemaker) </span>
+                    <strong>Mother</strong>
+                    <span>Homemaker</span>
                 </div>
                 <div class="education-item">
-                    <strong><i class="fas fa-child"></i>Younger Sister</strong>
+                    <strong>Younger Sister</strong>
                     <span>Anu Radha – B.Sc. in Computer Science (Married)</span>
                 </div>
             </div>
@@ -593,11 +568,11 @@
         
         <!-- PERSONAL INTERESTS (UPDATED SECTION) -->
         <div class="section">
-            <h2 class="section-title"><i class="fas fa-heart"></i>Interests & Hobbies</h2>
+            <h2 class="section-title">Interests & Hobbies</h2>
             <div class="education-grid" style="grid-template-columns: 1fr;"> 
                 <div class="education-item">
-                    <strong><i class="fas fa-tree"></i>Interests</strong>
-                    <span>Hiking, Dance, Music-Melodies, Nature Agriculture, Technology Enthusiast</span>
+                    <strong>Interests</strong>
+                    <span>Hiking, Dance, -Music-Melodies, Nature Agriculture, Technology Enthusiast</span>
                 </div>
             </div>
         </div>
@@ -605,7 +580,7 @@
         <!-- PORTFOLIO OVERVIEW -->
         <div class="section" style="background: rgba(15, 15, 25, 0.5);">
             <div class="portfolio-summary">
-                <h3><i class="fas fa-chart-line"></i>Real Estate Portfolio Overview</h3>
+                <h3>Real Estate Portfolio Overview</h3>
                 <div class="summary-stats">
                     <div class="stat">
                         <div class="stat-number">4</div>
@@ -625,7 +600,7 @@
 
         <!-- REAL ESTATE HOLDINGS -->
         <div class="section">
-            <h2 class="section-title"><i class="fas fa-map-marker-alt"></i>Real Estate Holdings</h2>
+            <h2 class="section-title">Real Estate Holdings</h2>
             <div class="properties-grid">
                 
                 <!-- Property 4: Residential House (Now first) -->
@@ -636,19 +611,19 @@
                     </div>
                     <div class="property-body">
                         <div class="property-detail">
-                            <i class="fas fa-building"></i> <strong>Type:</strong> Residential House (3 Floors)
+                            <strong>Type:</strong> Residential House (3 Floors)
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-map-pin"></i> <strong>Location:</strong> Shivalayam street, Gold Bazar MG Road Kadiri.
+                            <strong>Location:</strong> Shivalayam street, Gold Bazar MG Road Kadiri.
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-ruler-combined"></i> <strong>Size:</strong> 110 Square Yards
+                            <strong>Size:</strong> 110 Square Yards
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-key"></i> <strong>Status:</strong> <span class="status-badge"> Residence, Rental 1st floor </span>
+                            <strong>Status:</strong> <span class="status-badge"> Residence, Rental 1st floor </span>
                         </div>
                         <a href="https://maps.app.goo.gl/ACuu2TnXQ8gEeZZu6?g_st=aw" target="_blank" class="view-map-btn">
-                            <i class="fas fa-globe-asia"></i> View on Map
+                            View on Map
                         </a>
                     </div>
                 </div>
@@ -657,23 +632,23 @@
                 <div class="property-card">
                     <div class="property-header">
                         <div class="property-id">CSROY-153-B</div>
-                        <div class="property-title">Commercial Plot, Kadiri Bypass Road</div>
+                        <div class="property-title">Commercial Plot - Kadiri Bypass Road</div>
                     </div>
                     <div class="property-body">
                         <div class="property-detail">
-                            <i class="fas fa-city"></i> <strong>Type:</strong> Commercial/Residential Plot
+                            <strong>Type:</strong> Commercial/Residential Plot
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-location-arrow"></i> <strong>Location:</strong> Beside Varahisametha Adharwana Bhadrakali Temple, Near Hanuman junction.
+                            <strong>Location:</strong> Beside varahisametha adharwana bhadrakali temple, Near Hanuman junction.
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-ruler-combined"></i> <strong>Size:</strong> 125 Square Yards
+                            <strong>Size:</strong> 125 Square Yards
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-hammer"></i> <strong>Status:</strong> <span class="status-badge">Commercial & Housing Development </span>
+                            <strong>Status:</strong> <span class="status-badge">Commercial & Housing Development </span>
                         </div>
                         <a href="https://maps.app.goo.gl/dDG71pvxfY2jEnLN8" target="_blank" class="view-map-btn">
-                            <i class="fas fa-globe-asia"></i> View on Map
+                            View on Map
                         </a>
                     </div>
                 </div>
@@ -686,19 +661,19 @@
                     </div>
                     <div class="property-body">
                         <div class="property-detail">
-                            <i class="fas fa-tag"></i> <strong>Type:</strong> Commercial Property
+                            <strong>Type:</strong> Commercial Property
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-location-arrow"></i> <strong>Location:</strong> Bangalore Thumala Road, Kadiri
+                            <strong>Location:</strong> Bangalore Thumala Road, Kadiri
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-ruler-combined"></i> <strong>Size:</strong> 65 Cents
+                            <strong>Size:</strong> 65 Cents
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-clock"></i> <strong>Status:</strong> <span class="status-badge"> Commercial Land</span>
+                            <strong>Status:</strong> <span class="status-badge"> Commercial Land</span>
                         </div>
                         <a href="https://maps.app.goo.gl/xRy1HKkqkb8uPpgw7?g_st=aw" target="_blank" class="view-map-btn">
-                            <i class="fas fa-globe-asia"></i> View on Map
+                            View on Map
                         </a>
                     </div>
                 </div>
@@ -711,19 +686,19 @@
                     </div>
                     <div class="property-body">
                         <div class="property-detail">
-                            <i class="fas fa-seedling"></i> <strong>Type:</strong> Agricultural Land
+                            <strong>Type:</strong> Agricultural Land
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-location-arrow"></i> <strong>Location:</strong> Agriculture Land, Kadiri
+                            <strong>Location:</strong> Agriculture Land, Kadiri
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-ruler-combined"></i> <strong>Size:</strong> 2.2 Acres
+                            <strong>Size:</strong> 2.2 Acres
                         </div>
                         <div class="property-detail">
-                            <i class="fas fa-tractor"></i> <strong>Status:</strong> <span class="status-badge"> Agriculture Land</span>
+                            <strong>Status:</strong> <span class="status-badge"> Agriculture Land</span>
                         </div>
                         <a href="https://maps.app.goo.gl/X4q39YfSDsb82duq7?g_st=aw" target="_blank" class="view-map-btn">
-                            <i class="fas fa-globe-asia"></i> View on Map
+                            View on Map
                         </a>
                     </div>
                 </div>
@@ -732,18 +707,18 @@
 
         <!-- FINANCIAL OVERVIEW -->
         <div class="section" style="background: rgba(15, 15, 25, 0.5);">
-            <h2 class="section-title"><i class="fas fa-wallet"></i>Financial Overview</h2>
+            <h2 class="section-title">Financial Overview</h2>
             <div class="investments-section">
                 <div class="investment-item" style="background: linear-gradient(135deg, rgba(102, 126, 234, 0.15) 0%, rgba(118, 75, 162, 0.15) 100%); border: 2px solid rgba(102, 126, 234, 0.4);">
-                    <div class="investment-name"><i class="fas fa-money-check-alt"></i> Annual Salary Package</div>
+                    <div class="investment-name">Annual Salary Package</div>
                     <div class="investment-value" style="color: #34d399;">₹30 Lakhs PA</div>
                 </div>
                 <div class="investment-item">
-                    <div class="investment-name"><i class="fas fa-coins"></i> Gold ETF</div>
+                    <div class="investment-name">Gold ETF</div>
                     <div class="investment-value">₹7.5 Lakhs</div>
                 </div>
                 <div class="investment-item">
-                    <div class="investment-name"><i class="fas fa-chart-bar"></i> Tata Motors Shares</div>
+                    <div class="investment-name">Tata Motors Shares</div>
                     <div class="investment-value">₹5 Lakhs</div>
                 </div>
             </div>
@@ -752,7 +727,7 @@
         <footer>
             <p>
                 <span style="color: #f093fb; font-weight: 600; display: block; margin-bottom: 5px;">
-                    <i class="fas fa-plane-departure"></i> Relocation: Intends to relocate and settle in India by 2027.
+                    Relocation: Intends to relocate and settle in India by 2027.
                 </span>
                 &copy; 2024 Ravi Kumar B (ROY) Portfolio.
             </p>
@@ -760,7 +735,3 @@
     </div>
 </body>
 </html>
-
-
-
-
